@@ -1,0 +1,69 @@
+/* Kiri Salij and Rachel Miller, Fall 2021 */
+
+#search_div {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+img.search_img {
+  width: 4%;
+}
+
+.search_bar{
+        border-style: solid;
+        border-color: black;
+        width: 75%;
+        margin: 5px;
+        margin-right: 0;
+}
+
+.results{
+        border-style:solid;
+        border-color: black;
+        width: 100%;
+}
+
+p {
+  padding: 20px;
+}
+
+button{
+  margin: 5px;
+  margin-left: 0;
+  background-color: lightblue;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: midnightblue;
+  color: white;
+}
+
+#layout {
+	display: flex;
+}
+
+#sort-header {
+	background-color: midnightblue;
+	color: white;
+	padding: 10px 15px;
+}
+
+.vertical-sort {
+  list-style-type: none;
+  background-color: lightblue;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.selected {
+	background-color: grey;
+	color: white;
+}

@@ -1,0 +1,47 @@
+/* Kiri Salij and Rachel Miller */
+
+.results {
+	padding: 20px;
+	border: 3px solid black;
+	margin: 10px;
+	flex-grow: 1;
+}
+
+#sort-header {
+	background-color: midnightblue;
+	color: white;
+	padding: 15px 32px;
+}
+
+.vertical-sort {
+  list-style-type: none;
+  background-color: lightblue;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  color: #585858;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: midnightblue;
+  color: white;
+}
+
+#layout {
+	display: flex;
+}
+
+.selected {
+	background-color: grey;
+	color: white;
+}

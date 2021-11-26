@@ -1,0 +1,39 @@
+<!-- Kiri Salij and Rachel Miller, Fall 2021 -->
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>Search - Titanic API</title>
+		<script type="text/javascript" src="static/searchpage.js"></script>
+                <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='searchpage.css') }}" />
+                <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='nav.css') }}" />
+                <link rel="icon" href="https://lh3.googleusercontent.com/proxy/_Fnab7jU2sIyqEtV4sk1ofGSz3sDNdQuL0l7j6-ZkdlXGpIVD4tGpF6TtH8ZzIsyo4WzEn1QVEpPQ1dzdgUWuRiJ_Dt0ArU" type="image/png" >
+
+        </head>
+        <body>
+                <h1 class = "home"><a href="index">Titanic API</a></h1>
+                <ul class = "horizontal-navbar">
+                  <li><a href="rawdatapage">Raw Data</a></li>
+                  <li><a href="chartspage">Charts</a></li>
+                  <li><a href="searchpage">Search</a></li>
+                  <li><img class = "search" src="{{ url_for('static', filename='search.png')}}"></li>
+                </ul>
+
+                <h2>Search</h2>
+                <div id= "search_div">
+                  <img class = "search_img" src="{{ url_for('static', filename='search.png')}}">
+                  <input id="search" type="text" class="search_bar" />
+                  <button id="enter">Enter</button>
+                </div>
+                <div id = "layout">
+                  <ul class = "vertical-sort">
+            				<li id="sort-header">Sort By</li>
+            				<li><button id = 'name'>Name</li>
+            				<li><button id = 'age'>Age</li>
+            				<li><button id = 'passenger'>Passenger ID</li>
+            				<li><button id = 'class'>Class</li>
+            			</ul>
+                  <table class="results" id="search_box"></table>
+                </div>
+        </body>
+</html>
